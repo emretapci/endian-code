@@ -5,7 +5,9 @@ NodeJS module for encoding and decoding numbers of given size in big and little 
 https://github.com/emretapci/endian-code
 
 ## install
+```
 npm install --save endian-code
+```
 
 ## API
 ```
