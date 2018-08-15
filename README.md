@@ -30,7 +30,7 @@ console.log(endianCode.encode(0x1234, 8, false).map(x => x.toString(16))); //out
 
 /*
  decode() params:
-  array: array to be decoded
+  array: array or buffer to be decoded
   size: number's size in bytes
   bigEndian: true for big endian, false for little endian
 */
