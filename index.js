@@ -13,7 +13,7 @@ module.exports = {
 	},
 	decode: function (arr, k, bigEndian) {
 		if (typeof arr === 'Buffer')
-			arr = arr.toArray();
+			arr = [...arr];
 		let res = parseInt('0x' + (bigEndian ? arr.concat(new Array(k - arr.length).fill(0)) : new Array(k - arr.length).fill(0).concat(arr.reverse())).
 			reduce((total, next) => total += next.toString(16).padStart(2, '0'), ''), 16);
 		if (res >= parseInt('0x80' + '00'.repeat(k - 1)))
